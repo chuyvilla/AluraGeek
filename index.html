@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Videojuegos Retro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<div class="wrapper">
+    <body>
+
+        <header>
+            <img src="imagenes/AluraGeek.jpg" alt="logo">
+        </header>
+        
+        <main>
+            <!-- Dentro del main -->
+        <section id="agregar-producto">
+            <h1>Agregar Producto</h1>
+            <form id="product-form">
+                <input type="text" id="nombre" placeholder="Nombre del Producto">
+                <input type="number" id="precio" placeholder="Precio del Producto">
+                <input type="text" id="imagen" placeholder="URL de la Imagen">
+                <button type="submit">Agregar</button>
+            </form>
+        </section>
+        
+            <section id="productos" class="productos">
+                <!-- Aquí se renderizarán los productos -->
+                <!-- Dentro de la sección #productos -->
+        <div class="card">
+            <img src="imagenes/SkinArt_Neith_Default.webp" alt="Producto 1">
+            <div class="card-container--info">
+                <p>Neith</p>
+                <div class="card-container--value">
+                    <p>$ 70.00</p>
+                    <button class="eliminar-producto-btn">
+                        <img src="imagenes/basura.png" alt="Eliminar">
+                    </button>
+                </div>
+            </div>
+        </div>
+            </section>
+        </main>
+        
+        <footer>
+            <img src="imagenes/AluraGeek.jpg" alt="Logo">
+            <p>Desarrollado por Jesus Guadalupe Villa Salinas - 2024</p>
+        </footer>
+        
+        <script src="js/api.js"></script>
+        <script src="js/listarProductos.js"></script>
+        <script src="js/crearProducto.js"></script>
+</div>
+</body>
+</html>
